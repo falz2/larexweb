@@ -268,7 +268,8 @@
     <!-- End: Call to action -->
 
     <!-- Start: Footer -->
-  @iclude('layouts.footer')
+  @include('layouts.footer')
+  
     <!-- End: Footer -->
 
 @endsection
