@@ -23,6 +23,12 @@ class ContactController extends Controller
         //
     }
 
+     public function contactList()
+    {
+        $contacts = Contact::all();
+        return view('contactList', compact('contacts'));
+    }
+
     /**
      * Store a newly created resource in storage.
      */
