@@ -12,7 +12,7 @@ class ContactController extends Controller
      */
     public function index()
     {
-        //
+        
     }
 
     /**
@@ -25,8 +25,8 @@ class ContactController extends Controller
 
      public function contactList()
     {
-        $contacts = Contact::all();
-        return view('contactList', compact('contacts'));
+        $contacts = Contact::select('full_name')->get();
+        return view('contact-list', compact('contacts'));
     }
 
     /**
